@@ -1,6 +1,8 @@
 from flask import Flask, request
 
 app = Flask(__name__)
+app.use_reloader = True
+app.debug = True
 
 @app.route('/')
 def hello_world():
@@ -46,4 +48,4 @@ def letters_result():
 
 
 if __name__ == "__main__":
-    app.run(use_reloader=True, debug=True) # Nice trick -- see details in lecture notes
+    app.run()
