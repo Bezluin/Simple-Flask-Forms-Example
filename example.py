@@ -13,7 +13,7 @@ def form1():
   <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
   <input type="checkbox" name="vehicle3" value="Trolley"> I have a trolley
   <input type="submit" value="Submit">
-</form>"""
+</form>""" # You can imagine that you could also put this HTML in a form -- there are actually Flask-y libraries that help you use forms more efficiently, but for now we want to look at the simplest possible version to understand what's going on
 
 @app.route('/result',methods=["GET"])
 def result_form1():
